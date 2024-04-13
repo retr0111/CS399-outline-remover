@@ -10,7 +10,7 @@ def eliminateword_outliers(words: list) -> tuple:
     :returns: tuple containing lists of words without outliers and words that stayed
     """
     # Initialize the model
-    model = Model("glove_short.txt") # This is the model that is used as an example, if you want to change just change the path
+    model = Model(".gitattributes") # This is the model that is used as an example(glove_short.txt) but using lfs, if you want to change just change the path. 
     
     
     word_models = []  # Stores the model vectors of the words in the input list

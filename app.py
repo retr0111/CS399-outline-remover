@@ -22,7 +22,7 @@ def eliminateword_outliers(words: list) -> tuple:
         # End program if a vector representation of a word could not be found in the model.
         if word_vec is None:
             st.warning(f'Vector representation could not be found in model for word: {word}')
-            continue
+            break
 
         # Normalize and append word vector
         word_vec.normalize()    
